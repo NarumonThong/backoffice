@@ -1,0 +1,31 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon",
+    "start:prod": "ENV=production node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "base64-img": "^1.0.4",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.0",
+    "isomorphic-fetch": "^3.0.0",
+    "js-guid": "^1.0.2",
+    "mssql": "^9.1.1",
+    "mysql": "^2.18.1",
+    "node-red-contrib-mssql": "^0.0.7",
+    "tedious": "^15.1.2",
+    "uuidv4": "^6.2.13"
+  },
+  "devDependencies": {
+    "eslint": "^8.33.0",
+    "nodemon": "^1.18.3"
+  }
+}
