@@ -29,7 +29,7 @@ server.use(bodyParser.json({ limit: '500MB' }));
 // Allow content
 server.use('/api/uploads', express.static(`${__dirname}/uploads/equipments`));
 server.use('/api/uploads', express.static(`${__dirname}/uploads/rooms`));
-if (config.isProduction) server.use(express.static(`${__dirname}/www`))
+// if (config.isProduction) server.use(express.static(`${__dirname}/www`))
 
 // สร้าง Custom function
 server.use(require('./configs/middleware'));
@@ -38,8 +38,8 @@ server.use(require('./configs/middleware'));
 server.use('/api', require('./router'));
 
 server.get('*', (req, res) => {
-    if (config.isProduction)
-    return res.sendFile(`${__dirname}/www/index.html`);
+    // if (config.isProduction)
+    // return res.sendFile(`${__dirname}/www/index.html`);
     res.end(`<h1>Backend server is startd.</h1>`);
 });
 

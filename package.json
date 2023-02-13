@@ -6,11 +6,8 @@
   "scripts": {
     "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
     "start:frontend": "cd Frontend && npm run serve",
-    "start:backend": "cd Backend && npm start",
-    "build:frontend": "cd Frontend && npm run build",
-    "build:backend": "node .",
-    "build": "npm run build:backend && npm run build:frontend",
-    "start:prod": "cd Published && npm run start:prod"
+    "start:backend": "cd Backend && npm start"
+    
   },
   "repository": {
     "type": "git",
